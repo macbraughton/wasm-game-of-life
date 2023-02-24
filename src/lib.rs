@@ -15,7 +15,5 @@ extern {
 
 #[wasm_bindgen]
 pub fn greet(name: &str) {
-    let mut input:String = String::from(name);
-    let mut greeting = "Hello ".to_string() + &input;
-    alert(&greeting);
+  alert(&format!("Hello {}!", name));
 }
